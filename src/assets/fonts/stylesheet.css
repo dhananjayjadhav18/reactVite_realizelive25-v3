@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'SiemensSans Pro';
+    src: url('SiemensSansPro-Bold.eot');
+    src: local('SiemensSans Pro Bold'), local('SiemensSansPro-Bold'),
+        url('SiemensSansPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('SiemensSansPro-Bold.woff2') format('woff2'),
+        url('SiemensSansPro-Bold.woff') format('woff'),
+        url('SiemensSansPro-Bold.ttf') format('truetype'),
+        url('SiemensSansPro-Bold.svg#SiemensSansPro-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SiemensSans Pro';
+    src: url('SiemensSansPro-Roman.eot');
+    src: local('SiemensSans Pro Roman'), local('SiemensSansPro-Roman'),
+        url('SiemensSansPro-Roman.eot?#iefix') format('embedded-opentype'),
+        url('SiemensSansPro-Roman.woff2') format('woff2'),
+        url('SiemensSansPro-Roman.woff') format('woff'),
+        url('SiemensSansPro-Roman.ttf') format('truetype'),
+        url('SiemensSansPro-Roman.svg#SiemensSansPro-Roman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SiemensSans Pro';
+    src: url('SiemensSansPro-Roman_1.eot');
+    src: local('SiemensSans Pro Roman'), local('SiemensSansPro-Roman'),
+        url('SiemensSansPro-Roman_1.eot?#iefix') format('embedded-opentype'),
+        url('SiemensSansPro-Roman_1.woff2') format('woff2'),
+        url('SiemensSansPro-Roman_1.woff') format('woff'),
+        url('SiemensSansPro-Roman_1.ttf') format('truetype'),
+        url('SiemensSansPro-Roman_1.svg#SiemensSansPro-Roman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SiemensSans Pro';
+    src: url('SiemensSansPro-Bold_1.eot');
+    src: local('SiemensSans Pro Bold'), local('SiemensSansPro-Bold'),
+        url('SiemensSansPro-Bold_1.eot?#iefix') format('embedded-opentype'),
+        url('SiemensSansPro-Bold_1.woff2') format('woff2'),
+        url('SiemensSansPro-Bold_1.woff') format('woff'),
+        url('SiemensSansPro-Bold_1.ttf') format('truetype'),
+        url('SiemensSansPro-Bold_1.svg#SiemensSansPro-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SiemensSans Pro SBold';
+    src: url('SiemensSansPro-SBold.eot');
+    src: local('SiemensSans Pro SBold'), local('SiemensSansPro-SBold'),
+        url('SiemensSansPro-SBold.eot?#iefix') format('embedded-opentype'),
+        url('SiemensSansPro-SBold.woff2') format('woff2'),
+        url('SiemensSansPro-SBold.woff') format('woff'),
+        url('SiemensSansPro-SBold.ttf') format('truetype'),
+        url('SiemensSansPro-SBold.svg#SiemensSansPro-SBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

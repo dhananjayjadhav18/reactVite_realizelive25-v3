@@ -1,6 +1,6 @@
 {
   "name": "react-websitev1",
-  "homepage": "https://dhananjayjadhav18.github.io/realize-live25/",
+  "home": "https://dhananjayjadhav18.github.io/reactVite_realizelive25-v3/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,8 +9,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "diploy": "gh-pages -d dist"
+    "predploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "gh-pages": "^6.3.0",

@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/realize-live25',
+  base: '/reactVite_realizelive25-v3/'
 })

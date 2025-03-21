@@ -7,6 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import logo from "./../assets/images/siemens-logo.svg";
+import logoColor from "./../assets/images/Siemens_color_logo.png";
 
 const TopNav = () => {
   return (
@@ -29,7 +30,7 @@ const TopNav = () => {
                 >
                 <Offcanvas.Header closeButton>
                   <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                    Offcanvas
+                  <img src={logoColor} width={130} />
                   </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
@@ -52,7 +53,7 @@ const TopNav = () => {
 
       <Navbar className='secondNevBar' data-bs-theme="light" sticky="top">
         <Container className='justify-content-between'>
-          <Navbar.Brand href="#home" className='fs-6 fw-bold'>Realize LIVE India</Navbar.Brand>
+          <Navbar.Brand href="#home" className='fs-6 fw-bold dnone'>Realize LIVE India</Navbar.Brand>
           <Nav className="justify-content-end flex-grow-1 pe-3">
             <NavDropdown title="Attend" id="collapsible-nav-dropdown">
               <NavDropdown.Item href="#action/3.2">Agenda</NavDropdown.Item>

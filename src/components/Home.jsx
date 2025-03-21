@@ -1,5 +1,8 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
@@ -11,6 +14,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 
 import video from "./../assets/images/video/US-video.mp4";
 import infinityiconWithPattern1 from "./../assets/images/infinity-iconWithPattern-1.png";
@@ -44,7 +48,7 @@ const Home = () => {
       <header id="header-con">
           <div className="container-fluid">
             <div className="row">
-              <div className="col-lg-6 col-12">
+              <div className="col-lg-6 col-12" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-offset="0">
                 <div className="superscript">The Digital Transformation Conference</div>
                 <h1 className="title">Realize LIVE APAC 2025</h1>
                 <p>Join our community of thinkers and doers in design, manufacturing and lifecycle management to accelerate your digital transformation.</p>
@@ -63,14 +67,14 @@ const Home = () => {
             <div className="row justify-content-center">
             <div className="col-lg-10 col-12">
               <div className="row justify-content-between">
-                <div className="col-auto pt-2 pb-2">
+                <div className="col-auto pt-2 pb-2"  data-aos="fade-zoom-in" data-aos-duration="500" data-aos-delay="300">
                     <img src={infinityiconWithPattern1} width={80} />
                 </div>
-                <div className="col-lg-8 col-sm-8 pt-2 pb-2" >
+                <div className="col-lg-8 col-sm-8 pt-2 pb-2" data-aos="fade-zoom-in" data-aos-duration="500" data-aos-delay="450">
                   <h2 className="mb-0">Last chance to save $400 on a super early bird pass</h2>
                   <small>Ends February 10. Unlock access to sessions, training, certification, networking opportunities and more.</small>
                 </div>
-                <div className="col-auto pt-2 pb-2">
+                <div className="col-auto pt-2 pb-2" data-aos="fade-zoom-in" data-aos-duration="500" data-aos-delay="550">
                   <a href="https://events.sw.siemens.com/en-US/realizelive/americas/pricing-packages-americas/" className="btn_BoldGreen pt-2 pb-2" target="_blank">View packages</a>
                   </div>
                 </div>
@@ -82,10 +86,10 @@ const Home = () => {
       <section id="about-con">
         <div className="container-fluid">
           <div className="row justify-content-around gx-4">
-            <div className="col-lg-8 col-12">
+            <div className="col-lg-8 col-12" data-aos="fade-up" data-aos-duration="500" data-aos-delay="350">
               <ReactPlayer url={video} playing={true} loop={true} muted={true} controls={true} className='react-player' width='100%' height='100%'/>
             </div>
-            <div className="col-lg-4 col-12">
+            <div className="col-lg-4 col-12" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
               <div className="p-5">
                 <h2 className="h2 mb-4">Where your digital transformation gets real. Fast.</h2>
                 <p>We're returning to Detroit with over 450+ sessions and 2,500+ experts, leaders, and partners discussing AI, digitization, sustainability and optimization across the product lifecycle. For all things digital transformation, Realize LIVE is a chance to learn, network, and connect with the Siemens software community and walk away with new tools and insights for your digital journey.</p>
@@ -99,14 +103,14 @@ const Home = () => {
       <section id="speaker-con" className="bg-blue-dark">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-lg-8 col-12 mb-4">
+            <div className="col-lg-8 col-12 mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
               <h3 className="superscript">Featured</h3>
               <h2 className="h2 mb-4">Main stage speakers</h2>
               <p>Siemens, customers, executives and inspiring thought leaders come together to showcase how your digital transformation gets real. Fast.</p>
             </div>
           </div>
           <div className="row row-cols-lg-2 row-cols-1">
-            <div className="col">
+            <div className="col" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
               <div className="speaker-box">
                 <div className="row g-0">
                   <div className="col-lg-4 col-12 speaker-img"><img src={jeffMowry} className="img-fluid" alt=""/> </div>
@@ -118,7 +122,7 @@ const Home = () => {
                   </div>
               </div>	
             </div>
-            <div className="col">
+            <div className="col" data-aos="fade-up" data-aos-duration="500" data-aos-delay="550">
               <div className="speaker-box">
                 <div className="row g-0">
                   <div className="col-lg-4 col-12 speaker-img">
@@ -132,7 +136,7 @@ const Home = () => {
                   </div>
               </div>	
             </div>
-            <div className="col">
+            <div className="col" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
               <div className="speaker-box">
                 <div className="row g-0">
                   <div className="col-lg-4 col-12 speaker-img">
@@ -146,7 +150,7 @@ const Home = () => {
                   </div>
               </div>	
             </div>
-            <div className="col">
+            <div className="col" data-aos="fade-up" data-aos-duration="500" data-aos-delay="550">
               <div className="speaker-box">
                 <div className="row g-0">
                   <div className="col-lg-4 col-12 speaker-img">
@@ -160,7 +164,7 @@ const Home = () => {
                   </div>
               </div>	
             </div>
-            <div className="col">
+            <div className="col" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
               <div className="speaker-box">
                 <div className="row g-0">
                   <div className="col-lg-4 col-12 speaker-img">
@@ -173,7 +177,7 @@ const Home = () => {
                   </div>
               </div>	
             </div>
-            <div className="col">
+            <div className="col" data-aos="fade-up" data-aos-duration="500" data-aos-delay="550">
               <div className="speaker-box">
                 <div className="row g-0">
                   <div className="col-lg-4 col-12 speaker-img">
@@ -193,14 +197,14 @@ const Home = () => {
       <section id="whyAttend-con">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-lg-8 col-12 mb-4">
+            <div className="col-lg-8 col-12 mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
               <h3 className="superscript">Why you should attend</h3>
               <h2 className="h2 mb-4">Accelerate your digital transformation journey</h2>
               <p>Learn from experts and industry leaders, build your skills and discover the latest trends and technology with more than 400+ sessions.</p>
             </div>
           </div>
           <div className="row row-cols-lg-3 row-cols-1 g-5">
-            <div className="col">
+            <div className="col" data-aos="fade-up" data-aos-duration="500" data-aos-delay="350">
               <div className="why-pointer-box">
                 <div className="icon"><img src={icons_betterUser} width={55} alt=""/></div>
                 <div className="title">Become a better user</div>
@@ -209,7 +213,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="col">
+            <div className="col" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
               <div className="why-pointer-box">
                 <div className="icon"><img src={icons_thoughtLeaders} width={55} alt=""/></div>
                 <div className="title">Get inspired by thought leaders</div>
@@ -218,7 +222,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="col">
+            <div className="col" data-aos="fade-up" data-aos-duration="500" data-aos-delay="650">
               <div className="why-pointer-box">
                 <div className="icon"><img src={icons_stayAhead} width={55} alt=""/></div>
                 <div className="title">Stay ahead with product roadmaps</div>
@@ -227,7 +231,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="col">
+            <div className="col" data-aos="fade-up" data-aos-duration="500" data-aos-delay="350">
               <div className="why-pointer-box">
                 <div className="icon"><img src={icons_trainingCertification} width={55} alt=""/></div>
                 <div className="title">Gain exclusive hands-on training & certification</div>
@@ -236,7 +240,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="col">
+            <div className="col" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
               <div className="why-pointer-box">
                 <div className="icon"><img src={icons_connect} width={55} alt=""/></div>
                 <div className="title">Connect and celebrate with product experts</div>
@@ -245,7 +249,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="col">
+            <div className="col" data-aos="fade-up" data-aos-duration="500" data-aos-delay="650">
               <div className="why-pointer-box">
                 <div className="icon"><img src={icons_diveEcosystem} width={55} alt=""/></div>
                 <div className="title">Dive into the Siemens ecosystem</div>
@@ -255,7 +259,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="bg-blue-dark mt-5">
+          <div className="bg-blue-dark mt-5"  data-aos="fade-up" data-aos-duration="900" data-aos-delay="650">
             <div className="row align-content-center justify-content-around">
               <div className="col-auto">
                 <img src={eventGuide} alt="" width={300} className="img-fluid"/>
@@ -265,7 +269,7 @@ const Home = () => {
                 <p className="mb-0">All details on Realize LIVE Americas - tracks, industries, core topics and sessions.</p>
               </div>
               <div className="col-auto align-content-center">
-                <a href="https://downloads.ctfassets.net/17si5cpawjzf/BJO43RdbF9PXfDGhnfJb8/362a124ca1fd9310049fd8a46ee80870/RL25_AMS_Event_Guide_FINAL__2_.pdf" target="_blank" className="btn_BoldGreen">Download guide</a>
+                <a href="https://downloads.ctfassets.net/17si5cpawjzf/BJO43RdbF9PXfDGhnfJb8/362a124ca1fd9310049fd8a46ee80870/RL25_AMS_Event_Guide_FINAL__2_.pdf" target="_blank" className="btn_BoldGreen mb-3 mt-3">Download guide</a>
               </div>
             </div>
           </div>
@@ -275,7 +279,7 @@ const Home = () => {
       <section id="testimonials" className="bg-blue-dark">
         <div className="container-fluid">
           <div className="row justify-content-center">
-            <div className="col-lg-10 col-12">
+            <div className="col-lg-10 col-12"  data-aos="fade-up" data-aos-duration="750" data-aos-delay="400">
             <Swiper
               // install Swiper modules
               modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -310,7 +314,7 @@ const Home = () => {
       <section id="blogs-con">
         <div className="container-fluid">
           <div className="row row-cols-lg-3 row-cols-1 row-cols-md-2 gx-4">
-            <div className="col">
+            <div className="col" data-aos="fade-up" data-aos-duration="500" data-aos-delay="350">
               <div className="blogs-box">
                 <div className="img">
                   <img src={SiemensRealizeLiveSpeakerProgram}  className="img-fluid" alt=""/></div>
@@ -323,7 +327,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="col">
+            <div className="col" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
               <div className="blogs-box">
                 <div className="img"><img src={SponsorCard}  className="img-fluid" alt=""/></div>
                 <div className="title">Become a sponsor</div>
@@ -335,7 +339,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="col">
+            <div className="col" data-aos="fade-up" data-aos-duration="500" data-aos-delay="600">
               <div className="blogs-box">
                 <div className="img"><img src={SiemensRealizeLiveSolutionsCenter} className="img-fluid" alt=""/></div>
                 <div className="title">Solutions Center</div>
@@ -347,7 +351,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="col">
+            <div className="col" data-aos="fade-up" data-aos-duration="500" data-aos-delay="350">
               <div className="blogs-box">
                 <div className="img"><img src={SessionsAgenda} className="img-fluid" alt=""/></div>
                 <div className="title">Sessions</div>
@@ -359,7 +363,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="col">
+            <div className="col" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
               <div className="blogs-box">
                 <div className="img"><img src={SiemensRealizeBirdBRD27313} className="img-fluid" alt=""/></div>
                 <div className="title">Training and certification</div>
@@ -371,7 +375,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="col">
+            <div className="col" data-aos="fade-up" data-aos-duration="500" data-aos-delay="600">
               <div className="blogs-box">
                 <div className="img"><img src={RLAmericasExperiences} className="img-fluid" alt=""/></div>
                 <div className="title">Event guide</div>
@@ -385,26 +389,25 @@ const Home = () => {
             </div>
           </div>
           
-          <div className="bg-blue-dark mt-5">
+          <div className="bg-blue-dark mt-5"  data-aos="fade-up" data-aos-duration="400" data-aos-delay="550">
             <div className="row align-content-center justify-content-between">
               <div className="col-auto align-content-center">
                 <h2>Register now</h2>
                 <p className="mb-0">The digital transformation event: be informed, inspired and excited.</p>
               </div>
               <div className="col-auto align-content-center">
-                <a href="https://events.sw.siemens.com/en-US/realizelive/americas/pricing-packages-americas/" target="_blank" className="btn_BoldGreen">Register now</a>
+                <a href="https://events.sw.siemens.com/en-US/realizelive/americas/pricing-packages-americas/" target="_blank" className="btn_BoldGreen mt-3 mb-3">Register now</a>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      
-
-
     </>
   )
 }
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
 
 export default Home

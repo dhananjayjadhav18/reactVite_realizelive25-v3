@@ -211,3 +211,11 @@ h3.superscript {font-size:.9rem; text-transform: uppercase; font-weight:900;}
 #footer .legal-links {list-style-type: none;float: right; margin: 0; padding: 0; text-decoration: none}
 #footer .legal-links li {list-style-type: none; float: left;  text-decoration: none}
 #footer .legal-links li a {font-size: 16px; color: var(--white); text-decoration: none; margin-left:20px;}
+.dnone {display:block;}
+
+
+@media screen and (max-width:560px)   {
+    .navbar-toggler {position: absolute!important; top: 25%!important; right: 5%!important; background-color:var(--white)!important;}
+    .dnone {display: none;}
+    #header-con {background-position: left center;}
+}

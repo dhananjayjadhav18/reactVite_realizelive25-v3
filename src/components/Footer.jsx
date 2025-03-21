@@ -1,5 +1,7 @@
 import React from 'react'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 import siemensLogo from "./../assets/images/siemens-logo.svg";
 
@@ -14,7 +16,7 @@ import { FaYoutube } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-      <footer id="footer" className="bg-blue-dark">
+      <footer id="footer" className="bg-blue-dark"  data-aos="fade-up">
         <div className="container-fluid">
           <div className="row justify-content-end pb-5">
             <div className="col-lg-6 col-12">
